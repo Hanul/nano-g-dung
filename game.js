@@ -64,7 +64,7 @@ g(() => {
 		// 사람 이동 처리
 		if (is_man_dead !== true) {
 			
-			if (check_input('arrowleft')) {
+			if (check_input('arrowleft') || (check_input('mouse') && mouse_x < 0)) {
 				man_flip_x = true;
 				man_time += delta_time;
 				man_x -= delta_time * 300;
@@ -73,7 +73,7 @@ g(() => {
 				}
 			}
 			
-			if (check_input('arrowright')) {
+			if (check_input('arrowright') || (check_input('mouse') && mouse_x > 0)) {
 				man_flip_x = false;
 				man_time += delta_time;
 				man_x += delta_time * 300;
