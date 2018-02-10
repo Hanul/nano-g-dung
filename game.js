@@ -1,3 +1,6 @@
+game_width = 360;
+game_height = 640;
+
 let view = 'home';
 
 let point;
@@ -13,7 +16,7 @@ let is_man_dead;
 play('sound/bgm.mp3', {loop: true});
 
 // 선로딩
-for (let i = 0; i < 7; i += 1) {
+for (let i = 0; i < 6; i += 1) {
 	draw('img/man' + i + '.png');
 }
 draw('img/man_down.png');
