@@ -3,6 +3,8 @@
 
 https://nano-g-dung.firebaseapp.com/
 
+![Screenshot](dung.png)
+
 ## 라이센스
 [MIT](LICENSE)
 
